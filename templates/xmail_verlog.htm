@@ -1,0 +1,49 @@
+<p><div align = 'center'> <img src="images/logo-xmail.png" alt="XMAIL" border="0"> </div>
+<p><div align = 'center'> <H4><{$titulo}></H4> </div>
+
+<table border="0" width="90%" cellspacing="1" cellpadding="3" align="center" class= "outer">
+  <tr> 
+    <td align="left" class="itemHead" width='25%'></td>
+    <td align="left" class="itemHead" width='55%'><b><{$mensagem}></b></td>
+    <td align="left" class="itemHead" width="20%">
+      <div align="center"> <{$envto}> </div>
+   </td>
+  </tr>
+  <!-- Start topic loop -->
+  <{foreach item=topics from=$topics}> 
+  <tr valign="top"> 
+    <td class="even" align="left"><b><{$codigo}>:</b>&nbsp;<{$topics.id_men}><br>
+    <b><{$title_men}>:</b><br><{$topics.title_men}> <br>
+    <b><{$ultenvio}>:&nbsp </b> <br> <{$topics.date_envio}>
+    </td>
+
+    <td class='even' >
+    <div class='head' align="left"> <b><{$subject}>:</b> <{$topics.subject_men}><br> </div>
+    <div class="even" align="left">
+     <!-- Área do corpo da mensagem , não funcionou, pois textarea deve ser so texto
+    <form>
+    <TEXTAREA NAME="comments" COLS=60 ROWS=6 READONLY  ><{$topics.body_men}> </TEXTAREA>
+    </form>
+      -->
+    <{$topics.body_men}>
+    <!-- fim do corpo da mensagem -->
+
+    <{if $topics.anexos  eq ""}>
+
+    <{else}>
+        <br><b><{$anexos}>&nbsp </b> <{$topics.anexos}><br>
+    <{/if}>
+
+    </div>
+    </td>
+
+    <td class="head" align="left">
+      <{$topics.users}>
+
+    </td>
+    </tr>
+
+  <{/foreach}>
+  <!-- End topic loop -->
+</table>
+  <div class='even' align="center" > <{$navega}> </div>

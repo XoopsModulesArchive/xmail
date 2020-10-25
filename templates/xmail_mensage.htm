@@ -1,0 +1,87 @@
+
+<div align="center">
+  <center>
+  <table border="0" cellpadding="0" cellspacing="0" width="95%">
+    <tr>
+      <td width="40%">
+        <p align="center"> <img src="images/logo-xmail.png" alt="XMAIL" border="0"> </p>
+        <p align="center"><{$titulo}><br><{$totalmen}>
+
+        </td>
+      <td width="60%">
+       <{if $comform eq "S" }>
+
+        <form method="POST" action=<{$actionform}> name="mesage">
+          <div align="center">
+            <table border="0" cellpadding="0" cellspacing="0" width="100%" class= "outer"  >
+              <tr>
+                <td width="30%"  class='head'   ><{$ordem}>: </td>
+                <td width="50%"  class='even' >
+                   <input type="radio" value="A" name="ordem"><{$title_men}><br>
+                   <input type="radio" value="C" name="ordem"><{$codigo}> <br>
+                   <input type="radio" value="DN" name="ordem"><{$dtnova}> <br>
+                   <input type="radio" value="DA" name="ordem"><{$dtantiga}>
+
+                </td>
+                <td  width="20%"  > <br><br><br><br><input type="submit" value="<{$enviar}> " name="B1"> </td>
+
+              </tr>
+
+            </table>
+
+          </div>
+        </form>
+       <{else}>
+            <br>
+       <{/if }>
+      </td>
+      <td>
+     </tr>
+  </table>
+  </center>
+</div>
+<table border="0" width="90%" cellspacing="1" cellpadding="3" align="center" class= "outer">
+  <tr> 
+    <td align="left" class="itemHead" width='25%'></td><td align="left" class="itemHead" width='40%'><b><{$mensagem}></b></td><td align="left" class="itemHead" width="20%">
+      <div align="center"></div></td><td align="left" class="itemHead" width="15%" >
+      <div align="center"><b><{$opt}></b></div></td></tr>
+  <!-- Start topic loop -->
+  <{foreach item=topics from=$topics}> 
+  <tr valign="top"> 
+    <td class="even" align="left"><b><{$codigo}>:</b>&nbsp;<{$topics.id_men}><br>
+    <b><{$title_men}>:</b><br><{$topics.title_men}>
+    <br><b><i>--<{$topics.newsletter}>--</b></i>
+
+    </td>
+    <td >
+    <div class='head' align="left"> <b><{$subject}>:</b> <{$topics.subject_men}><br> </div>
+    <div class="even" align="left"><{$topics.body_men}> <br>
+    <b><{$ultenvio}>:&nbsp </b> <{$topics.date_envio}>
+    <{if $topics.anexos  eq ""}>
+
+    <{else}>
+        <br><b><{$anexos}>&nbsp </b> <{$topics.anexos}><br>
+    <{/if}>
+
+    </div>
+    
+    </td>
+
+    <td class="even" align="left">
+      <b><{$usucad}>:</b><br><{$topics.poster}><br>
+      <b><{$datacad}>:</b><br><{$topics.datesub}>
+    </td>
+    <td class="head" align="left">
+      <a href="gerencia.php?op=alt&id_men=<{$topics.id_men}>" ><{$alt}></a> <br>
+      <a href="gerencia.php?op=exc&id_men=<{$topics.id_men}>" ><{$exc}> <br>
+
+      <a href="gerencia.php?op=<{$topics.opt2}>&id_men=<{$topics.id_men}>"> <{$topics.aprov}> <br>
+
+    </td>
+    </tr>
+    
+
+  <{/foreach}>
+    <!-- End topic loop -->
+</table>
+  <div class='even' align="center" > <{$navega}> </div>

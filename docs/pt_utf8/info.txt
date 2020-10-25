@@ -1,0 +1,50 @@
+Você não pode remover a pasta Docs deste módulo.
+Se voce criar uma tradução para um novo idioma,
+copie o conteúdo de um outro idioma existente
+para dentro da sua pasta de tradução dentro
+da pasta docs.
+Os arquivos que devem estar dentro da sua pasta
+docs de tradução estão listados abaixo.
+- versionhistory.txt
+- credits.txt
+- creditsgeral.txt
+- disclamer.txt
+- infoxmail.txt
+- install.txt
+- leiame.txt
+- license.txt
+- readme.txt
+- reviewtranslation.txt
+- update.txt
+- info.txt
+Você pode alterar os arquivo corrigindo
+e alterando as traduções de acordo com a
+sua necessidade, complementando o seu conteúdo
+ou mes melhorando as informações contidas.
+Mas você não deve retirar os créditos
+dos desenvolvedores e nem das pessoas
+que ajudaram a traduzir ou testar o módulo.
+Envie o que você acrecentar para:
+- admin@xoopscube.com.br
+- claudia@foxbrasil.com.br
+- giba@foxbrasil.com.br
+Obrigado pela sua atenção.
+======================================================
+Example:
+your language: esperanto
+docs/esperanto
+copy docs/english/*.* to docs/esperanto
+In docs/esperanto
+- versionhistory.txt
+- credits.txt
+- creditsgeral.txt
+- disclamer.txt
+- infoxmail.txt
+- install.txt
+- leiame.txt
+- license.txt
+- readme.txt
+- reviewtranslation.txt
+- update.txt
+- info.txt
+Você poderá agora traduzir ou complementar o que desejar.

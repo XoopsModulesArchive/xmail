@@ -1,0 +1,47 @@
+[b]Antes de mais nada, obrigado por usar este módulo :-)[/b]
+- Xmail é um módulo 100% otimizado e baseado nos códigos do kernel xoops.
+- Utiliza smarty.
+- Só pode ser utilizado em versões superiores a 2.0.5 do kernel xoops.
+- Muito cuidado aos webmaster ao liberar este módulo para determinados grupos.
+- Enviar emails , Mensagem Particular e sempre respeitando o seu perfil de usuário.
+- Registra um log das mensagens enviadas, guardando quem recebeu e quando.
+- Permite visualizar o log integral ou selecionando-se a mensagem e grupos de usuários.
+- Enviar mensagens com arquivos em anexo, válido para MP também.
+- Trata permissões de arquivos para anexo.
+- Bloco para solicitar ativação de conta.
+- Bloco para assinar ou cancelar newsletter.
+- Novas opções no menu principal:
+- Controle total de Lotes Pendentes para envio.
+- Enviar Newsletter respeitando os grupos de interesse do usuário.
+- Log de Newsletter
+- Permitir ou não Editores Visuais.
+- Escolha um dos editores (spaw, fck, htmlarea, Koivi, tynymce)
+- Pode usar esquema de perfis na newsletter.
+- Gerênciar Ativação
+- Gerênciar Newsletter
+- Gerênciar Tabela de Perfis
+- Guia Completo para você usar melhor o módulo.
+Objetivo deste módulo.
+- Permite cadastrar mensagens para envio posterior, guardando-as em banco de dados.
+Aceita html, smiles, fotos e códigos especiais como :
+[b]{X_UID}[/b] retornará o ID do membro
+[b]{X_UNAME}[/b] retornará o nome do membro
+[b]{X_UEMAIL}[/b] retornará o email do membro
+[b][color=CC0000]* Cuidado se você possuir um release da versão 2.0.5 instavel veja abaixo.[/color][/b]
+[code]
+Vá até a linha 342 do arquivo <path_do_xoops>/class/criteria.php
+Se encontrar a linha abaixo desta forma:
+if ( is_numeric($this->value) ) { // || strtoupper($this->operator) == 'IN') ???
+Altere a linha para esta:
+if ( is_numeric($this->value) || strtoupper($this->operator) == 'IN') {
+O que esse bug faz se existir ?
+Na opção de envio de mensagens , quando seleciona-se um ou mais grupos, sempre retornará a mensagem
+que não foi selecionado usuário.
+[/code]
+A equipe xoopscube gostaria de saber sobre suas impressões.
+Não deixe de visitar o nosso site em: [url=http://www.xoopscube.com.br][b][color=0000CC]xoopscube [/color][/b][b][color=CC0000](A sua casa em Xoops no Brasil)[/b][/color][/url]
+[code]
+- Para baixar os editores em versões atuais verifique no link abaixo:
+- [url=http://dev.xoopscube.org/modules/xfmod/project/showfiles.php?group_id=1155]Editores Visuais[/url]
+[/code]
+[size=xx-small]file: infoxmail.txt[/size]

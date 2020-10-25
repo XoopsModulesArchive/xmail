@@ -1,0 +1,201 @@
+// $Id: xmail //
+// ------------------------------------------------------------------------ //
+// XOOPS - PHP Content Management System //
+// Copyright (c) 2000 XOOPS.org //
+// <http://www.xoops.org/> //
+// ------------------------------------------------------------------------ //
+// This program is free software; you can redistribute it and/or modify //
+// it under the terms of the GNU General Public License as published by //
+// the Free Software Foundation; either version 2 of the License, or //
+// (at your option) any later version. //
+// //
+// You may not change or alter any portion of this comment or credits //
+// of supporting developers from this source code or any supporting //
+// source code which is considered copyrighted (c) material of the //
+// original comment or credit authors. //
+// //
+// This program is distributed in the hope that it will be useful, //
+// but WITHOUT ANY WARRANTY; without even the implied warranty of //
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the //
+// GNU General Public License for more details. //
+// //
+// You should have received a copy of the GNU General Public License //
+// along with this program; if not, write to the Free Software //
+// Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA //
+// ------------------------------------------------------------------------ //
+
+// ######################################################################### //
+// ## File for credits of productions. ## //
+// ######################################################################### //
+// ## Module.............: XMAIL ## //
+// ## Author.............: Claudia ## //
+// ## e-mail..............: claudia@foxbrasil.com.br ## //
+// ## website............: http://www.xoopstotal.com.br ## //
+// ## License............: GNU ## //
+// ## Default Language ...: Portuguese ## //
+// ## Default Folder .....: portuguesebr ## //
+// ######################################################################### //
+// ## Observações do fabricante do módulo ## //
+// ## ## // Este desenvolvimento foi inspirado no código do Wf-sections
+// ## ## // Obrigado ao Catz e membros desenvolvedores Xoops.org
+// ## ## // Obrigado a todos os membros da XoopsTotal pelo apoio.
+// ######################################################################### //
+
+
+// ######################################################################### //
+// ## File for credits Geral. ## //
+// ######################################################################### //
+
+
+// ************************************************************************* //
+// ######################################################################### //
+// ## Services. ## //
+// ######################################################################### //
+// ## Default Folder.....: portuguesebr and portugues.do.brasil ## //
+// ######################################################################### //
+
+
+// ######################################################################### //
+// ## Credits e-mail.....: adrianapz@netuno.com.br
+// ## Credits website....: http://www.xoopstotal.com.br ## //
+// ## Real Name...........: Adriana  ## //
+// ## Finished services..:  ideas, tests
+######################################################################### //
+
+
+// ######################################################################### //
+// ## Credits e-mail.....: ajaksu@uol.com.br
+// ## Credits website....: http://www.zoologia.bio.br //
+// ## Real Name...........: Daniel (ajaksu)   ## //
+// ## Finished services..: Translations, ideas, tests
+######################################################################### //
+
+// ######################################################################### //
+// ## Credits e-mail.....: andyprs@bol.com.br
+// ## Credits website....: http://sistemack.webcindario.com/html ## //
+// ## Real Name...........: Anderson Pimentel (v4v) ## //
+// ## Finished services..: ideas, tests
+######################################################################### //
+
+// ######################################################################### //
+// ## Credits e-mail.....: dantegianotto@terra.com.br
+// ## Credits website....: http://www.xoopstotal.com.br ## //
+// ## Real Name...........: dantoso   ## //
+// ## Finished services..: Translations, ideas, tests
+######################################################################### //
+
+
+// ######################################################################### //
+// ## Credits e-mail.....: rodrigo_designer@uol.com.br
+// ## Credits website....: http://www.informacaovirtual.hoc.com.br ## //
+// ## Real Name...........: Rodrigo Ribeiro Neto (DigaoSPBR)  ## //
+// ## Finished services..: ideas, tests
+######################################################################### //
+
+// ######################################################################### //
+// ## Credits e-mail.....: ricardo@ellipsis.com.br ## //
+// ## Credits website....: http://www.brainstorms.com.br  ## //
+// ## Real Name...........: Ricardo  (eyekeeper)  ## //
+// ## Finished services..: Translations, ideas, tests
+######################################################################### //
+
+// ######################################################################### //
+// ## Credits e-mail.....: fernando@mastop.com.br ## //
+// ## Credits website....: http://www.mastop.com.br  ## //
+// ## Real Name...........: Fernando Santos (Topet05)   ## //
+// ## Finished services..: ideas, tests
+######################################################################### //
+
+
+// ######################################################################### //
+// ## Credits e-mail.....:futurespy@terra.com.br ## //
+// ## Credits website....: http://www.yuji.uni.cc  ## //
+// ## Real Name...........: Marcelo (FutureSpy)  ## //
+// ## Finished services..: ideas, tests
+######################################################################### //
+
+######################################################################### //
+// ## Credits e-mail.....: giba@foxbrasil.com.br ## //
+// ## Credits website...: http://www.xoopstotal.com.br ## //
+// ## Real Name .........: Gilberto G. de Oliveira ## //
+// ## Finished services..:idealizer, analise,coordination  ,tests
+######################################################################### //
+
+######################################################################### //
+// ## Credits e-mail.....: bibliotecario@ibest.com.br ## //
+// ## Credits website...: http://www.xoopstotal.com.br ## //
+// ## Real Name .........: hunter  ## //
+// ## Finished services..:  ideas, tests
+######################################################################### //
+
+
+######################################################################### //
+// ## Credits e-mail.....: ## // igorvc@bol.com.br
+// ## Credits website...: http://www.comp.ufscar.br/~igorvc ## //
+// ## Real Name .........: Igor Vitório Custódio (Igorvc)  ## //
+// ## Finished services..: ideas, tests
+######################################################################### //
+
+
+######################################################################### //
+// ## Credits e-mail.....:    ## // marcos@soul.com.br
+// ## Credits website...: http://www.xoopstotal.com.br ## //
+// ## Real Name .........: Marcão   ## //
+// ## Finished services..: ideas, tests
+######################################################################### //
+
+######################################################################### //
+// ## Credits e-mail.....: celso.goya@terra.com.br ## //
+// ## Credits website...: http://www.moinho.net  ## //
+// ## Real Name .........: Celso Goya (OKI) ## //
+// ## Finished services..: Translations , ideas, tests
+######################################################################### //
+
+
+######################################################################### //
+// ## Credits e-mail.....: webmaster@myxoopsshop.org ## //
+// ## Credits website...:  http://www.myxoopsshop.org  ## //
+// ## Real Name .........: Marko Schmuck (Predator) ## //
+// ## Finished services..: ideas, tests
+######################################################################### //
+
+######################################################################### //
+// ## Credits e-mail.....:  salomao@yawl.com.br ## //
+// ## Credits website...:   http://druglordsgame.com.br/index.php?ref=103901 ## //
+// ## Real Name .........: Salomão  ## //
+// ## Finished services..: ideas, tests
+######################################################################### //
+
+######################################################################### //
+// ## Credits e-mail.....: ozp@psico.net   ## //
+// ## Credits website...:   http://www.redepsi.com.br/portal ## //
+// ## Real Name .........: Oliver (ozp11)   ## //
+// ## Finished services..: Translation
+######################################################################### //
+
+######################################################################### //
+// ## Credits e-mail.....:  renatoferreira_pt@sapo.pt## //
+// ## Credits website...:  http://sm0ka.dots.ro/html | http://ecp.iscsp.utl.pt  ## //
+// ## Real Name .........: Renato Ferreira (Smoka) ## //
+// ## Finished services..: Translations, ideas, tests
+######################################################################### //
+
+######################################################################### //
+// ## Credits e-mail.....:  ## // valkiri@click21.com.br
+// ## Credits website...:   ## //
+// ## Real Name .........: Valkiria  ## //
+// ## Finished services..: ideas, tests
+######################################################################### //
+
+######################################################################### //
+// ## Credits e-mail.....:  wilsoncortez@ig.com.br## //
+// ## Credits website...:   http://xoops.moinho.net ## //
+// ## Real Name .........: Wilson  ## //
+// ## Finished services..: Translations, ideas, tests
+######################################################################### //
+
+
+
+
+
+

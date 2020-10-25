@@ -1,0 +1,10 @@
+Procedimentos para atualizar a versão 1.10 para 2.0 :
+- Descompactar os arquivos da nova versão.
+- Enviar os arquivos via FTP para dentro da pasta onde o Xmail está instalado.
+- Atualizar o módulo na Administração.
+- Importante: executar o script http://seusite/xoops/modules/xmail/upgrade1.10_to_2.0.php
+para atualizar as tabelas e assim compatibilizar com esta nova versão.
+- Se voce não estiver usando a versão 1.10, veja os outros arquivos de atualização antes.
+- Depois de atualizar a versão entre no setor de parametros e preecha o que for necessário.
+- Para maiores detalhes utilize o Guia que está na adminstração.
+[size=xx-small]file: update.txt[/size]

@@ -1,0 +1,87 @@
+<div align="center">
+  <center>
+  <table border="0" cellpadding="0" cellspacing="0" width="95%">
+    <tr>
+      <td width="40%">
+        <p align="center"> <img src="images/logo-xmail.png" alt="XMAIL" border="0"> </p>
+        <p align="center"><{$titulo}><br><{$totalmen}>
+
+        </td>
+      <td width="60%">
+       <{if $comform eq "S" }>
+
+        <form method="POST" action=<{$actionform}> name="mesage">
+          <div align="center">
+            <table border="0" cellpadding="0" cellspacing="0" width="100%" class= "outer"  >
+              <tr>
+                <td width="30%"  class='head'   ><{$ordem}>: </td>
+                <td width="50%"  class='even' >
+                   <input type="radio" value="D" name="ordem"><{$data_lote}><br>
+                   <input type="radio" value="U" name="ordem"><{$solicitante}> <br>
+
+                </td>
+                <td  width="20%"  > <br><br><br><br><input type="submit" value="<{$enviar}> " name="B1"> </td>
+
+              </tr>
+
+            </table>
+
+          </div>
+        </form>
+       <{else}>
+            <br>
+       <{/if }>
+      </td>
+      <td>
+     </tr>
+  </table>
+  </center>
+</div>
+<table border="0" width="95%" cellspacing="1" cellpadding="3" align="center" class= "outer">
+  <tr class="itemHead"   >
+    <td align="left" class="itemHead" width='15%'></td>
+    <td align="left" class="itemHead" width='20%'><b><{$mensagem}></b></td>
+    <td align="left" class="itemHead" width="55%"><div align="center"></div></td><td> </td>
+    <td align="left" class="itemHead" width="10%"><div align="center"><b><{$opt}></b></div></td>
+  </tr>
+  <!-- Start topic loop -->
+  <{foreach item=topics from=$topics}> 
+  <tr valign="top" class="even"    >
+    <td class="even" align="left"><b><{$lote}>:</b>&nbsp;<{$topics.lote_solicit}><br>
+    <b><{$data_lote}></b><br><{$topics.dt_solicit}>
+    <b><{$solicitante}>:</b><br><{$topics.link_user_logado}> <br>
+    <b><{$pendente}>:</b><{$topics.qtd_pendente}>
+    </td>
+
+    <td class="even" align="left"><b><{$codigo}>:</b>&nbsp;<{$topics.id_men}><br>
+    <b><{$title_men}>:</b><br><{$topics.title_men}>
+    </td>
+    <td >
+    <div class='head' align="left"> <b><{$subject}>:</b> <{$topics.subject_men}><br> </div>
+    <div class="even" align="left"><{$topics.body_men}> <br>
+    <b><{$ultenvio}>:&nbsp </b> <{$topics.date_envio}>
+    <{if $topics.anexos  eq ""}>
+
+    <{else}>
+        <br><b><{$anexos}>&nbsp </b> <{$topics.anexos}><br>
+    <{/if}>
+
+    </div>
+    
+    </td>
+
+    <td class="even" align="left">
+      <b><{$usucad}>:</b><br><{$topics.poster}><br>
+      <b><{$datacad}>:</b><br><{$topics.datesub}>
+    </td>
+    <td class="head" align="left">
+      <a href="gerencia_lote.php?op=send&lote=<{$topics.lote_solicit}>" ><{$enviar}></a> <br>
+      <a href="gerencia_lote.php?op=exc&lote=<{$topics.lote_solicit}>" ><{$exc}> <br>
+    </td>
+    </tr>
+    
+
+  <{/foreach}>
+    <!-- End topic loop -->
+</table>
+  <div class='even' align="center" > <{$navega}> </div>

@@ -1,0 +1,5 @@
+The Team of XoopsTotal would like to thank the following people for their help and support during the development phase of this module:
+
+Eyekeeper, Topet05, Wilson, GibaPhp and all Beta-Testers of site www.xoopers.com.br / www.xoopstotal.com.br.
+
+[size=xx-small]file: creditsgeral.txt[/size]

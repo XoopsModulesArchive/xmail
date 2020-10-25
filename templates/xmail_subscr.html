@@ -1,0 +1,53 @@
+<script language="JavaScript">
+<!--
+function check_req_fields(form) {
+	var errmsg = '';
+	if (form.user_name.value.length == 0 || form.user_name.value == '<{$lang_enter_name}>')
+		errmsg += '\n - User Name';
+	if (form.user_nick.value.length == 0 || form.user_nick.value == '<{$lang_enter_surname}>')
+		errmsg += '\n - Nick Name';
+	if (form.user_mail.value.length == 0 || form.user_mail.value == '<{$lang_enter_email}>')
+		errmsg += '\n - Email Address';
+	if (errmsg == '') {
+		return true;
+	} else {
+		msg = '<{$lang_enter_fields}>:\\n' + errmsg;
+		alert(msg);
+		return false;
+	}
+}
+//-->
+</script>
+<h2><{$en_title}></h2>
+<div id="en_disclaimer"><{$EN_DISCLAIMER}>
+
+<form action='<{$en_form_action}>' method='post' onsubmit='return check_req_fields(this)'>
+<table width='70%' cellspacing='1' id='subscribe'>
+<tr><th><{$lang_name}></th><td><input name='user_name' type='text' size='60' maxlength='120' value='<{$en_realname}>'></td></tr>
+<tr><th><{$lang_nickname}></th><td><input type='text' name='user_nick' size='25' maxlength='25' value='<{$en_username}>'></td></tr>
+<tr><th><span class="req"> *</span><{$lang_email}></th><td><input type='text' name='user_mail' size='60' maxlength='60' value='<{$en_email}>'></td></tr>
+
+<!-- <tr><td>     </td><td><span class="req"> <{$lang_denote}> </span></td></tr> -->
+</table>
+ <br>
+
+<{if $usa_perf eq '1'}>
+<table>
+<tr><th width='30%'  > <{$infoperf}></th><td><span class="req"> <{html_checkboxes name="id_perf" options=$tab_perf checked=$perf_sel separator="<br>"}>            </span> </td></tr>
+</table>
+<{/if}>
+
+
+<input type='hidden' name='action' value='subscribe_conf'>
+</div>
+
+
+<br>
+<center>  <input type=submit name='subscribe' value='<{$lang_submit_button}>'> </center>
+
+
+</form>
+
+
+
+			

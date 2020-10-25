@@ -1,0 +1,116 @@
+[b][color=FF3333][font=Courier][size=small]
+##################################################
+## Version 2.0.0 Xmail (The Big One):
+##################################################
+[bug][b001] Ao enviar mensagens com html para Mensagens Particulares.
+[fixed][f011] about.php (constant errors)
+[fixed][f010] sql.php (exclude default in key primary)
+[fixed][f009] news.php (root files class fixed)
+[fixed][f008] Sincronização de arquivos de Tradução (falta traduzir)
+[changed][c010] many minor changes.
+[changed][c009] Usuário só pode visualizar lotes pendentes do que ele publicou.
+[changed][c008] Control changes submit message. Para host lerdo.
+[added][a062] script update version 1.10 for 2.0
+[added][a061] blocks activation register (very good)
+[added][a060] control logs activation in Admin.
+[added][a059] Block newsletter (codebase evenews)
+[added][a058] Assinatura em newsletter obriga confirmação do usuário.
+[added][a057] Cancel newsletter.
+[added][a056] Group for newsletter.
+[added][a055] Admin Groups for newsletter.
+[added][a054] Submit newsletter.
+[added][a053] Perfil users newsletter.
+[added][a052] Control lotes submit message.
+[added][a051] Admin lotes pendentes.
+[added][a050] delete lotes pendentes.
+[added][a049] Submit lotes pendentes.
+[added][a048] Consultar lotes enviados com sucesso.
+[added][a047] Permitir editor Visual (wysiwyg)
+[added][a046] Editor spaw (for browser Iexplore :-()
+[added][a045] Editor fck
+[added][a044] Editor htmlarea (good)
+[added][a043] Editor Koivi (The best)
+[added][a042] Editor Tynymce
+[added][a041] Admin Manager activations.
+[added][a040] Admin Manager Newsletter.
+[added][a039] Admin Optimize Database Xmail.
+[added][a038] Admin Import users in Newsletter.
+[added][a037] Admin Manager Table perfil.
+[added][a036] Admin Categories for Newsletter.
+[added][a035] Habilitar editores visuais <root_xoops>/class (copy folder)
+[added][a034] [url=http://dev.xoopscube.org/modules/xfmod/project/showfiles.php?group_id=1155]Editors (wysiwyg)[/url]
+[added][a033] Admin About.
+[added][a032] Admin Guia / Tutorials.
+[added][a031] Admin Documents.
+##################################################
+[/size][/font][/color][/b]
+[b][size=small][color=009900][font=Courier]
+##################################################
+## Version 1.11 Xmail (The Big One):
+##################################################
+[fixed][f007] Revison general of code.
+[fixed][f006] and many other bugs
+[fixed][f005] sql queries - now there are less queries.
+[changed][c007] Aborted developer. Rebulding new version.
+[changed][c006] some templates corrections are done
+[changed][c005] many minor changes
+[changed][c004] many language files changed done
+##################################################
+[/font][/color][/size][/b]
+[b][size=small][color=000033][font=Courier]
+##################################################
+## Version 1.10 Xmail (The Big One):
+##################################################
+[removed][r001] Limitations feature
+[fixed][f004] Parameters for submit count
+[added][a030] New Admins options
+[added][a029] submit PM for groups.
+[added][a028] Register log for message submit.
+[added][a027] Admin look log integral for message submited.
+[added][a026] Folder for Uploads of files (Default : XOOPS_URL/modules/xmail/upload)
+[added][a025] Permissions of files. (Default: 0774)
+[added][a024] Tamanho max files for upload in bytes.
+[added][a023] Formate for date (baseaded in functions php)
+[added][a022] Permission or no for include files in message.
+[added][a021] Compatible with Xoops 2.0.5 or later.
+[added][a020] Uptade for version (with metabase codebase)
+[added][a019] Updates avaliable.
+##################################################
+[/font][/color][/size][/b]
+[b][size=small][color=009999][font=Courier]
+##################################################
+## Version 1.0.8 Xmail (The Big One): public users.
+##################################################
+[fixed][f003] loop for big submit. (problem)
+[changed][c003] Html only.
+[changed][c002] Option in perfil for preferencias of User. (NO SPAM)
+[added][a018] Admins aprove message.
+[added][a017] General message Admin (delete, submit, aprove, update, etc)
+[added][a016] Order look message (Alphabetical, ID, Date (D), Date (A))
+##################################################
+[/font][/color][/size][/b]
+[b][color=0099CC][font=Courier]
+##################################################
+## Version 1.0.1 Xmail (The Big One):
+##################################################
+[fixed][f002] languages.
+[fixed][f001] constants for translations.
+[changed][c001] Bbcode for Xoops.
+[added][a015] Developer module integral.
+[added][a014] Register message for submit.
+[added][a013] Aprove message of users.
+[added][a012] Sumit e-mail for users and groups.
+[added][a011] Submit for unique user.
+[added][a010] Submit unique group.
+[added][a009] Submit last login after (Formate yyyy-mm-dd, optional),
+[added][a008] Submit last login before (Formate yyyy-mm-dd, optional),
+[added][a007] Submit last login X days before (optional)
+[added][a006] Submit last login X days after (optional)
+[added][a005] Submit message for users defined in perfil (Yes)
+[added][a004] Submit message for user inativos.
+[added][a003] Submit message for register date > X Days.
+[added][a002] Submit message for register date < X Days.
+[added][a001] Limit for page for subimt.
+##################################################
+[/font][/color][/b]
+[size=xx-small]file: versionhistory.txt[/size]

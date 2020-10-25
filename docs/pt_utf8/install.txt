@@ -1,0 +1,11 @@
+Somente para quem não possui o Xmail instalado.
+1 - Descompactar o módulo.
+2 - Enviar via Ftp para dentro da pasta modules.
+3 - Entrar na administração do Xoops e instalar normalmente o módulo.
+4 - Após instalar, vá na área de Admin do módulo e defina primeiramente os parametros.
+5 - Habilite ou não os blocos do módulo.
+6 - Vá em grupos e defina quem poderá ter acesso administrativo ao módulo (cuidado)
+7 - Maiores orientações verifique o Guia que está na área de administração do módulo.
+Sempre que possuir alguma boa idéia para melhorar este módulo, não deixe de entrar em contato pelo e-mail admin@xoopscube.com.br
+Muito obrigado por usar nosso módulo.
+[size=xx-small]file: install.txt[/size]

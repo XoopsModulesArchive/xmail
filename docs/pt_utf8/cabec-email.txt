@@ -1,0 +1,35 @@
+cabeçalho de email recebido no servidor zeal
+---------------------------
+Return-Path: <claudia@zeal.com.br>
+X-Original-To: claudia@zeal.com.br
+Delivered-To: claudia@zeal.com.br
+Received: by servzeal.zeal.com.br (Postfix, from userid 1008)
+id 0F2A932276E; Wed, 26 Jan 2005 10:09:09 -0300 (BRT)
+Received: from cobaltestes2.sp.smcobal.com.br (unknown [200.204.180.226])
+by servzeal.zeal.com.br (Postfix) with ESMTP id B3E1532276D
+for <claudia@zeal.com.br>; Wed, 26 Jan 2005 10:09:08 -0300 (BRT)
+Received: from localhost (localhost.localdomain [127.0.0.1])
+by cobaltestes2.sp.smcobal.com.br (Postfix) with ESMTP id 2589F65C02F
+for <claudia@zeal.com.br>; Wed, 26 Jan 2005 13:49:16 +0000 (UTC)
+Received: from cobaltestes2.sp.smcobal.com.br ([127.0.0.1])
+by localhost (cobaltestes2.sp.smcobal.com.br [127.0.0.1]) (amavisd-new, port 10024)
+with ESMTP id 04831-05 for <claudia@zeal.com.br>;
+Wed, 26 Jan 2005 10:49:15 -0300 (BRT)
+Received: from [192.0.50.40] (unknown [200.205.208.114])
+by cobaltestes2.sp.smcobal.com.br (Postfix) with ESMTP id 3E02765C00D
+for <claudia@zeal.com.br>; Wed, 26 Jan 2005 13:49:15 +0000 (UTC)
+Received: from 127.0.0.1 (AVG SMTP 7.0.300 [265.7.2]); Wed, 26 Jan 2005 10:46:39 -0200
+Date: Wed, 26 Jan 2005 10:46:38 -0200
+To: claudia@zeal.com.br
+From: XOOPS Site - Teste Claudia <claudia@zeal.com.br>
+Subject: =?utf-8?Q?Este_=E9_o_c=F3digo_de_ativa=E7=E3o_para_claudia2?=
+Message-ID: <75b7ee8b256b42db8c32f85534e1455e@localhost>
+X-Priority: 3
+X-Mailer: PHPMailer [version 1.72]
+X-Mailer: PHP/4.3.9
+Mime-Version: 1.0
+Content-Transfer-Encoding: 8bit
+Content-Type: text/plain; charset=utf-8
+X-Virus-Scanned: by amavisd-new at smcobal.com.br
+Status:
+X-UM-Flags: \SEEN

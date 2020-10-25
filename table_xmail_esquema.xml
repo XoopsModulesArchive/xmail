@@ -1,0 +1,696 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<database>
+
+ <name>XOOPS_DB_NAME</name>
+ <create>1</create>
+
+ <table>
+
+  <name>XOOPS_DB_PREFIX_xmail_ativacao</name>
+
+  <declaration>
+
+   <field>
+    <name>id_user</name>
+    <type>integer</type>
+    <notnull>1</notnull>
+    <default>0</default>
+   </field>
+
+   <field>
+    <name>dt_envio</name>
+    <type>integer</type>
+   </field>
+
+   <field>
+    <name>user_logado</name>
+    <type>integer</type>
+   </field>
+
+   <field>
+    <name>activation_type</name>
+    <type>integer</type>
+   </field>
+
+   <index>
+    <name>id_user</name>
+    <field>
+     <name>id_user</name>
+     <sorting>ascending</sorting>
+    </field>
+   </index>
+
+  </declaration>
+
+ </table>
+
+ <table>
+
+  <name>XOOPS_DB_PREFIX_xmail_aux_send</name>
+
+  <declaration>
+
+   <field>
+    <name>id_user</name>
+    <type>integer</type>
+    <notnull>1</notnull>
+    <default>0</default>
+   </field>
+
+   <field>
+    <name>lote_solicit</name>
+    <notnull>1</notnull>
+    <default>0</default>
+    <type>integer</type>
+   </field>
+
+   <index>
+    <name>lote</name>
+    <unique>1</unique>
+    <field>
+     <name>lote_solicit</name>
+     <sorting>ascending</sorting>
+    </field>
+    <field>
+     <name>id_user</name>
+     <sorting>ascending</sorting>
+    </field>
+   </index>
+
+  </declaration>
+
+ </table>
+
+ <table>
+
+  <name>XOOPS_DB_PREFIX_xmail_aux_send_l</name>
+
+  <declaration>
+
+   <field>
+    <name>lote_solicit</name>
+    <type>integer</type>
+    <notnull>1</notnull>
+    <default>0</default>
+   </field>
+
+   <field>
+    <name>id_men</name>
+    <type>integer</type>
+    <notnull>1</notnull>
+    <default>0</default>
+   </field>
+
+   <field>
+    <name>user_logado</name>
+    <type>integer</type>
+    <notnull>1</notnull>
+    <default>0</default>
+   </field>
+
+   <field>
+    <name>dt_solicit</name>
+    <type>integer</type>
+   </field>
+
+   <field>
+    <name>email_conf</name>
+    <type>text</type>
+    <length>60</length>
+   </field>
+
+   <field>
+    <name>mail_fromname</name>
+    <type>text</type>
+    <length>60</length>
+   </field>
+
+   <field>
+    <name>mail_fromemail</name>
+    <type>text</type>
+    <length>60</length>
+   </field>
+
+   <field>
+    <name>mail_send_to</name>
+    <type>text</type>
+    <length>20</length>
+   </field>
+
+   <field>
+    <name>is_new</name>
+    <type>integer</type>
+    <default>0</default>
+   </field>
+
+   <index>
+    <name>lote_solicit</name>
+    <unique>1</unique>
+    <field>
+     <name>lote_solicit</name>
+     <sorting>ascending</sorting>
+    </field>
+   </index>
+
+   <index>
+    <name>user_logado</name>
+    <unique>1</unique>
+    <field>
+     <name>user_logado</name>
+     <sorting>ascending</sorting>
+    </field>
+    <field>
+     <name>lote_solicit</name>
+     <sorting>ascending</sorting>
+    </field>
+   </index>
+
+  </declaration>
+
+ </table>
+
+ <table>
+
+  <name>XOOPS_DB_PREFIX_xmail_files</name>
+
+  <declaration>
+
+   <field>
+    <name>fileid</name>
+    <type>integer</type>
+    <default></default>
+    <notnull>1</notnull>
+   </field>
+
+   <field>
+    <name>filerealname</name>
+    <type>text</type>
+    <length>255</length>
+    <notnull>1</notnull>
+    <default></default>
+   </field>
+
+   <field>
+    <name>date</name>
+    <type>integer</type>
+    <notnull>1</notnull>
+    <default>0</default>
+   </field>
+
+   <field>
+    <name>ext</name>
+    <type>text</type>
+    <length>64</length>
+    <notnull>1</notnull>
+    <default></default>
+   </field>
+
+   <field>
+    <name>minetype</name>
+    <type>text</type>
+    <length>64</length>
+    <notnull>1</notnull>
+    <default></default>
+   </field>
+
+   <field>
+    <name>filedescript</name>
+    <type>text</type>
+   </field>
+
+   <field>
+    <name>uid</name>
+    <type>integer</type>
+    <notnull>1</notnull>
+    <default>0</default>
+   </field>
+
+   <field>
+    <name>dir_upload</name>
+    <type>text</type>
+    <length>255</length>
+    <notnull>1</notnull>
+    <default></default>
+   </field>
+
+   <index>
+    <name>uid</name>
+    <field>
+     <name>uid</name>
+     <sorting>ascending</sorting>
+    </field>
+   </index>
+
+  </declaration>
+
+ </table>
+
+ <table>
+
+  <name>XOOPS_DB_PREFIX_xmail_men_anexo</name>
+
+  <declaration>
+
+   <field>
+    <name>fileid</name>
+    <type>integer</type>
+    <notnull>1</notnull>
+    <default>0</default>
+   </field>
+
+   <field>
+    <name>idmen</name>
+    <type>integer</type>
+    <notnull>1</notnull>
+    <default>0</default>
+   </field>
+
+   <index>
+    <name>idmen</name>
+    <field>
+     <name>idmen</name>
+     <sorting>ascending</sorting>
+    </field>
+   </index>
+
+   <index>
+    <name>fileid</name>
+    <field>
+     <name>fileid</name>
+     <sorting>ascending</sorting>
+    </field>
+   </index>
+
+  </declaration>
+
+ </table>
+
+ <table>
+
+  <name>XOOPS_DB_PREFIX_xmail_mensage</name>
+
+  <declaration>
+
+   <field>
+    <name>id_men</name>
+    <type>integer</type>
+    <notnull>1</notnull>
+    <default></default>
+   </field>
+
+   <field>
+    <name>title_men</name>
+    <type>text</type>
+    <length>50</length>
+    <notnull>1</notnull>
+    <default></default>
+   </field>
+
+   <field>
+    <name>subject_men</name>
+    <type>text</type>
+    <length>80</length>
+    <notnull>1</notnull>
+    <default></default>
+   </field>
+
+   <field>
+    <name>body_men</name>
+    <type>text</type>
+    <notnull>1</notnull>
+    <default></default>
+   </field>
+
+   <field>
+    <name>aprovada</name>
+    <type>integer</type>
+    <notnull>1</notnull>
+    <default>0</default>
+   </field>
+
+   <field>
+    <name>uid</name>
+    <type>integer</type>
+    <notnull>1</notnull>
+    <default>0</default>
+   </field>
+
+   <field>
+    <name>datesub</name>
+    <type>integer</type>
+    <notnull>1</notnull>
+    <default>0</default>
+   </field>
+
+   <field>
+    <name>date_envio</name>
+    <type>integer</type>
+    <notnull>1</notnull>
+    <default>0</default>
+   </field>
+
+   <field>
+    <name>dohtml</name>
+    <type>integer</type>
+    <notnull>1</notnull>
+    <default>0</default>
+   </field>
+
+   <field>
+    <name>dobr</name>
+    <type>integer</type>
+    <notnull>1</notnull>
+    <default>0</default>
+   </field>
+
+   <field>
+    <name>is_new</name>
+    <type>integer</type>
+    <notnull>1</notnull>
+    <default>0</default>
+   </field>
+
+   <index>
+    <name>title_men</name>
+    <field>
+     <name>title_men</name>
+     <sorting>ascending</sorting>
+    </field>
+   </index>
+
+   <index>
+    <name>aprovada</name>
+    <field>
+     <name>aprovada</name>
+     <sorting>ascending</sorting>
+    </field>
+   </index>
+
+  </declaration>
+
+ </table>
+
+ <table>
+
+  <name>XOOPS_DB_PREFIX_xmail_newsletter</name>
+
+  <declaration>
+
+   <field>
+    <name>user_id</name>
+    <type>integer</type>
+    <default></default>
+    <notnull>1</notnull>
+   </field>
+
+   <field>
+    <name>user_name</name>
+    <type>text</type>
+    <length>60</length>
+   </field>
+
+   <field>
+    <name>user_nick</name>
+    <type>text</type>
+    <length>25</length>
+   </field>
+
+   <field>
+    <name>user_email</name>
+    <type>text</type>
+    <length>60</length>
+    <default></default>
+    <notnull>1</notnull>
+   </field>
+
+   <field>
+    <name>user_conf</name>
+    <type>text</type>
+    <length>120</length>
+   </field>
+
+   <field>
+    <name>confirmed</name>
+    <type>integer</type>
+    <default>0</default>
+   </field>
+
+   <field>
+    <name>user_time</name>
+    <type>timestamp</type>
+   </field>
+
+   <field>
+    <name>user_host</name>
+    <type>text</type>
+    <length>120</length>
+   </field>
+
+   <index>
+    <name>luser_email</name>
+    <unique>1</unique>
+    <field>
+     <name>user_email</name>
+     <sorting>ascending</sorting>
+    </field>
+   </index>
+
+  </declaration>
+
+ </table>
+
+ <table>
+
+  <name>XOOPS_DB_PREFIX_xmail_param</name>
+
+  <declaration>
+
+   <field>
+    <name>dias_excluir</name>
+    <type>integer</type>
+    <notnull>1</notnull>
+    <default>100</default>
+   </field>
+
+   <field>
+    <name>envia_xmails</name>
+    <type>integer</type>
+    <notnull>1</notnull>
+    <default>50</default>
+   </field>
+
+   <field>
+    <name>ordem_admin</name>
+    <type>text</type>
+    <length>2</length>
+    <notnull>1</notnull>
+    <default>A</default>
+   </field>
+
+   <field>
+    <name>limite_page</name>
+    <type>integer</type>
+    <notnull>1</notnull>
+    <default>10</default>
+   </field>
+
+   <field>
+    <name>aprov_auto</name>
+    <type>integer</type>
+    <notnull>1</notnull>
+    <default>0</default>
+   </field>
+
+   <field>
+    <name>dir_upload</name>
+    <type>text</type>
+    <length>255</length>
+    <notnull>1</notnull>
+    <default>/modules/xmail/upload</default>
+   </field>
+
+   <field>
+    <name>selmimetype</name>
+    <type>text</type>
+    <notnull>1</notnull>
+    <default></default>
+   </field>
+
+   <field>
+    <name>maxupload</name>
+    <type>integer</type>
+    <notnull>1</notnull>
+    <default>1048576</default>
+   </field>
+
+   <field>
+    <name>format_time</name>
+    <type>text</type>
+    <length>100</length>
+    <notnull>1</notnull>
+    <default>d-M-Y H:i:s</default>
+   </field>
+
+   <field>
+    <name>permite_anexo</name>
+    <type>integer</type>
+    <notnull>1</notnull>
+    <default>0</default>
+   </field>
+
+   <field>
+    <name>file_mode</name>
+    <type>text</type>
+    <length>4</length>
+    <notnull>1</notnull>
+    <default>0774</default>
+   </field>
+
+   <field>
+    <name>veri_mailok</name>
+    <type>integer</type>
+    <notnull>1</notnull>
+    <default>1</default>
+   </field>
+
+   <field>
+    <name>allow_html</name>
+    <type>integer</type>
+    <notnull>1</notnull>
+    <default>0</default>
+   </field>
+
+   <field>
+    <name>tipo_editor</name>
+    <type>text</type>
+    <length>10</length>
+   </field>
+
+   <field>
+    <name>usa_perf</name>
+    <type>integer</type>
+    <notnull>1</notnull>
+    <default>0</default>
+   </field>
+
+  </declaration>
+
+ </table>
+
+ <table>
+
+  <name>XOOPS_DB_PREFIX_xmail_perfil_news</name>
+
+  <declaration>
+
+   <field>
+    <name>user_id</name>
+    <type>integer</type>
+    <default>0</default>
+    <notnull>1</notnull>
+   </field>
+
+   <field>
+    <name>id_perf</name>
+    <type>integer</type>
+   </field>
+
+   <index>
+    <name>user_id</name>
+    <field>
+     <name>user_id</name>
+     <sorting>ascending</sorting>
+    </field>
+   </index>
+
+  </declaration>
+
+ </table>
+
+ <table>
+
+  <name>XOOPS_DB_PREFIX_xmail_send_log</name>
+
+  <declaration>
+
+   <field>
+    <name>id_user</name>
+    <type>integer</type>
+    <default>0</default>
+    <notnull>1</notnull>
+   </field>
+
+   <field>
+    <name>id_men</name>
+    <type>integer</type>
+    <notnull>1</notnull>
+    <default>0</default>
+   </field>
+
+   <field>
+    <name>dt_envio</name>
+    <type>integer</type>
+    <notnull>1</notnull>
+    <default>0</default>
+   </field>
+
+   <field>
+    <name>email_conf</name>
+    <type>text</type>
+    <length>60</length>
+    <notnull>1</notnull>
+    <default></default>
+   </field>
+
+   <index>
+    <name>id_user</name>
+    <field>
+     <name>id_user</name>
+     <sorting>ascending</sorting>
+    </field>
+   </index>
+
+   <index>
+    <name>id_men</name>
+    <field>
+     <name>id_men</name>
+     <sorting>ascending</sorting>
+    </field>
+   </index>
+
+   <index>
+    <name>dt_envio</name>
+    <field>
+     <name>dt_envio</name>
+     <sorting>ascending</sorting>
+    </field>
+   </index>
+
+  </declaration>
+
+ </table>
+
+ <table>
+
+  <name>XOOPS_DB_PREFIX_xmail_tabperfil</name>
+
+  <declaration>
+
+   <field>
+    <name>id_perf</name>
+    <type>integer</type>
+    <default></default>
+    <notnull>1</notnull>
+   </field>
+
+   <field>
+    <name>descri_perf</name>
+    <type>text</type>
+    <length>60</length>
+   </field>
+
+  </declaration>
+
+ </table>
+
+</database>

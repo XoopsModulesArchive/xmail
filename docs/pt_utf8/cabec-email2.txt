@@ -1,0 +1,42 @@
+cabeçalho de email recebido na foxtotal
+------------------------------------------
+Return-path: <claudiacpd@smcobal.com.br>
+Received: from cobaltestes2.sp.smcobal.com.br ([200.204.180.226])
+by foxtotal.com.br (foxtotal.com.br [192.168.111.19])
+(MDaemon.PRO.v7.2.0.R)
+with ESMTP id md50000498584.msg
+for <claudia@foxbrasil.com.br>; Wed, 26 Jan 2005 11:04:50 -0300
+Received: from localhost (localhost.localdomain [127.0.0.1])
+by cobaltestes2.sp.smcobal.com.br (Postfix) with ESMTP id 241D965C00D
+for <claudia@foxbrasil.com.br>; Wed, 26 Jan 2005 14:06:39 +0000 (UTC)
+Received: from cobaltestes2.sp.smcobal.com.br ([127.0.0.1])
+by localhost (cobaltestes2.sp.smcobal.com.br [127.0.0.1]) (amavisd-new, port 10024)
+with ESMTP id 04831-08 for <claudia@foxbrasil.com.br>;
+Wed, 26 Jan 2005 11:06:38 -0300 (BRT)
+Received: from [192.0.50.40] (unknown [200.205.208.114])
+by cobaltestes2.sp.smcobal.com.br (Postfix) with ESMTP id 76BFF65C002
+for <claudia@foxbrasil.com.br>; Wed, 26 Jan 2005 14:06:36 +0000 (UTC)
+Received: from 127.0.0.1 (AVG SMTP 7.0.300 [265.7.2]); Wed, 26 Jan 2005 11:03:50 -0200
+Message-ID: <005c01c503a7$7b1dcee0$283200c0@claudia.com>
+Reply-To: "Claudia A. V. Callegari (Cobal)" <claudiacpd@smcobal.com.br>
+From: "Claudia A. V. Callegari (Cobal)" <claudiacpd@smcobal.com.br>
+To: "Claudia A. V. Callegari" <claudia@foxbrasil.com.br>
+Subject: teste
+Date: Wed, 26 Jan 2005 11:03:50 -0200
+X-Priority: 3
+X-MSMail-Priority: Normal
+X-Mailer: Microsoft Outlook Express 6.00.2800.1437
+X-MimeOLE: Produced By Microsoft MimeOLE V6.00.2800.1441
+X-Virus-Scanned: by amavisd-new at smcobal.com.br
+X-MDRcpt-To: claudia@foxbrasil.com.br
+X-Rcpt-To: claudia@foxbrasil.com.br
+X-MDRemoteIP: 200.204.180.226
+X-Return-Path: claudiacpd@smcobal.com.br
+X-MDaemon-Deliver-To: claudia@foxbrasil.com.br
+X-Spam-Checker-Version: SpamAssassin 2.64 (2004-01-11) on ns1.foxtotal.com
+X-Spam-Status: No, hits=-4.8 required=4.0 tests=BAYES_00,HTML_MESSAGE
+autolearn=no version=2.64
+X-Spam-Level:
+X-Spam-Processed: foxtotal.com.br, Wed, 26 Jan 2005 11:04:53 -0300
+X-MDAV-Processed: foxtotal.com.br, Wed, 26 Jan 2005 11:04:53 -0300
+X-Antivirus: AVG for E-mail 7.0.300 [265.7.2]

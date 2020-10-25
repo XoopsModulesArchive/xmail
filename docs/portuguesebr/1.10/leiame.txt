@@ -1,0 +1,200 @@
+/*
+* $Id: leiame.txt
+* Module: XMAIL
+* Version: v1.10
+* Release Date: 17 Fevereiro 2004
+* Author: Claudia Antonini Vitiello Callegari  claudia@foxbrasil.com.br
+* Credits: Xoopstotal  Team.
+* Licence: GNU
+*/
+
+/*
+- Xmail é um módulo 100% otimizado e baseado nos códigos do kernel xoops.
+- Utiliza smarty.
+- Só pode ser utilizado em versões superiores ou iguais a 2.0.5 do kernel xoops.
+- Muito cuidado aos webmaster ao liberar este módulo para determinados grupos.
+*/
+
+
+Objetivo deste módulo.
+
+- Permite cadastrar mensagens para envio posterior, guardando-as em banco de dados.
+  Aceita html, smiles, fotos e códigos especiais como :
+         {X_UID} retornará o ID do membro
+         {X_UNAME} retornará o nome do membro
+         {X_UEMAIL} retornará o email do membro
+
+- Enviar emails , Mensagem Particular  ou  o que estiver selecionado no perfil do usuário.
+  , selecionando alguns critérios como :
+  Um único usuário, ou vários usuários selecionados,
+  Um único grupo ou vários grupos selecionados,
+  O último login foi após  (Formato yyyy-mm-dd, opcional),
+  O último login foi antes de  (Formato yyyy-mm-dd, opcional) ,
+  O último login foi a mais de X dias atrás (opcional),
+  O último login foi a menos de X dias atrás (opcional),
+  Enviar mensagem apenas para membros que aceitam notificações por email (opcional)
+  Enviar mensagens apenas para membros inativos (opcional)
+  Se este item estiver selecionado todas as mensagens, (incluindo as particulares) serão ignoradas
+  Data de registro é após (Formato yyyy-mm-dd, opcional),
+  Data de registro é antes de (Formato yyyy-mm-dd, opcional)
+
+
+- Registra um log das mensagens enviadas, guardando quem recebeu e quando.
+  Isto será muito importante para que você possa acompanhar quem recebeu os avisos.
+
+- Permite visualizar o log integral ou selecionando-se a mensagem e grupos de usuários.
+  O supervisor do módulo poderá ver log completo.
+  O usuário do módulo poderá ver as mensagens que ele cadastrou  e recebeu.
+  
+
+- IMPORTANTE: Este módulo respeita o perfil do usuário quanto a opção de receber ou não notificações
+              por email. Se o usuário selecionou que não deseja receber email, ele não receberá.
+              Se nos parâmetros deste módulo estiver selecionado para não verificar esta opção a mensagem
+              será encaminha para Caixa de Entrada do usuário como Mensagem Particular, no caso de se
+              tentar enviar um email para ele.
+              Desta forma não se violará as regras de SPAM.
+
+
+
+O que um usuário comum pode fazer ??
+
+  Pode cadastrar mensagem para ser aprovada. ( O webmaster receberá email para aprova-la)
+  Mas se o módulo estiver configurado para aprovar automaticamente, não será necessário
+  aprovação pelo Webmaster ou Supervisor.
+  Pode enviar mensagens após aprovadas.
+  Ver log de envio.
+  Alterar (quando não enviada e não aprovada )  e excluir somente mensagens cadastradas por ele.
+
+O que pode fazer o administrador ?
+  Obviamente tudo que o usuário faz .
+  Cadastrar mensagens, as quais ja entram aprovadas.
+  Administrar mensagens:  Alterar    ( se ainda não foi enviada  )
+     Remover    ( se ja foi enviada, irá verificar parâmetros ref. Remover mensagem, após x dias que fora enviada )
+     Aprovar    ( O usuário que cadastrou , receberá email informando que ja foi aprovada)
+     Desaprovar ( Ficará desativada, não permitindo que seja enviada)
+
+  Em administração -  Alterar parâmetros .
+
+     A princípio são 12 parâmetros:
+
+     Remover mensagem, após x dias que fora enviada :
+       (Quando em administração de mensagens, tentar excluir alguma mensagem, se a mesma foi enviada a
+         menos de x dias  o sistema não permitirá exclui-la. )
+
+     Enviar mensagem de quantas em quantas ?
+
+     (Para evitar sobrecarga no servidor , poderá ser definido quantas mensagens enviar de uma so vez.
+      Exemplo:  Se optou por 50, você escolhe grupos que totalizam  200 usuários.
+               Após enviar 50, será apresentado um form para que você autorize continuar. )
+
+
+     Ordem para exibir mensagens cadastradas:
+           Alfabética do título
+           Código
+           Data de envio decrescente
+           Data de envio crescente
+           
+           
+      Limite por página:
+           Informar quantas mensagens deseja exitir por página em Administrar mensagens
+           e Log de envio.
+           
+      Aprovar automaticamente :
+           Informar Sim ou Não indicando se deseja que as mensagens sejam aprovadas
+           automaticamente ou não.
+           Cuidado !!  verifique a real necessidade de liberar esta opção.
+           
+
+      Diretório para upload de arquivos anexos
+            Default : XOOPS_URL/modules/xmail/upload
+            Dentro deste diretório, será criado um para cada usuário guardar os arquivos que vão
+            anexos nas mensagens. O nome do subdiretório será o mesmo do login.
+            
+      Tipo de arquivos permitidos para upload de anexos das mensagens.
+
+      Tamanho máximo do arquivo para upload em bytes.
+      
+      Formato de aprensentação de datas, baseado na função date do php.
+             Para exibir data do cadatramento e data do último envio.
+             
+      Indicar se permitirá inserir arquivos anexos ou não.
+      
+      Definir permissão para o diretório de upload, não sendo necessário em Sistemas Windows.
+              Default: 0774
+              
+      Indicar se o sistema checará as preferências no perfil do usuário de não receber email.
+              Se informar sim e o usuário não deseja receber email, nehuma mensagem será enviada.
+              Se informa não e o usuário não deseja receber email, será enviado para mensagem particular.
+
+              
+Como funciona arquivos anexos ?
+     Somente será aceito, se definido em parâmetros para aceita-los.
+     O processo de anexar arquivos é feito em "alterar" , onde haverá um formularío para
+     fazer upload do arquivo.
+     Após upload o arquivo ja ficará vinculado com a mensagem, podendo ser excluído , se desejar.
+     Será exibido ao usuário uma lista de outros arquivos que ja tenham sido  enviado (por upload) através de
+     outras mensagens, podendo simplesmente anexa-los na mensagem que esta sendo alterada.
+     Tudo isso so pode ser feito se a mensagem ainda não foi enviada e antes da aprovação .
+
+Onde ficam os arquivos anexos ?
+     Fisicamente ficam dentro do diretório definido em parâmetros , onde é criado
+     subdiretórios para cada usuário. O nome do subdiretório é o login do usuário.
+     O arquivo é excluído quando exclui-se a mensagem  se ele não estiver vinculado a outra mensagem.
+
+      
+O que fazer após instalação ?
+
+   Entrar em administração para definir os parâmetros.
+
+
+Qual a versão do xoops que deve ser usada ?
+
+   O xoops deve ser versão 2.05 ou superior.
+   Cuidado se você possuir um release da versão 2.0.5 instavel veja abaixo.
+   Vá até a linha 342 do arquivo <path_do_xoops>/class/criteria.php
+   Se encontrar a linha abaixo desta forma:
+
+   if ( is_numeric($this->value) ) {   //   || strtoupper($this->operator) == 'IN') ???
+
+   Altere a linha para esta:
+
+   if ( is_numeric($this->value) || strtoupper($this->operator) == 'IN') {
+
+
+  O que esse bug faz se existir ?
+    Na opção de envio de mensagens , quando seleciona-se um ou mais grupos, sempre retornará a mensagem
+      que não foi selecionado usuário.
+
+
+
+Para quem estiver atualizando a versão ...
+
+    Acretito  que todos devem saber, mas é bom lembrar  para  além de copiar os arquivos para
+    diretório xmail, entrar em administração de módulos  e  solicitar para atualizar.
+    Pois houve alterações em templates e só serão vistas se fizer isso.
+
+    Como foi eliminado alguns arquivos desnecessários, antes de atualizar seria melhor
+    apagar o anterior.
+
+     IMPORTANTE:
+
+    Para atualizar versão além dos procedimentos acima, deve-se executar o script
+    <xoops_url>/modules/xmail/upgrade1.0X_to_1.0Y.php  para fazer alterações no banco de dados.
+    Obs. X  refere-se a versão atual
+         Y  refere-se a nova versão
+         Exemplo:  upgrade1.08_to_1.09.php
+
+
+   A partir da versão 1.10, para atualizar o módulo , após executar os procedimentos
+   normais do xoops, deve-se executar o script <xoops_url>/modules/xmail/upgrade.php,
+   no qual foi implementado um esquema de atualização do banco de dados utilizando-se
+   xml .
+   
+
+ A equipe Xoopers  gostaria de saber sobre suas impressões.
+Não deixe de visitar o nosso site em: http://www.xoopstotal.com.br
+
+
+
+
+
